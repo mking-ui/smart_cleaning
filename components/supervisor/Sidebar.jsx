@@ -13,6 +13,7 @@ const SideBar = () => {
         { name: 'In-progress', path: '/supervisor/progress', icon: assets.add_icon },
         { name: 'Completed', path: '/supervisor/complete', icon: assets.add_icon },
         { name: 'Staff Info', path: '/supervisor/staff', icon: assets.product_list_icon },
+        { name: 'Add Cleaner', path: '/supervisor/add-cleaner', icon: assets.add_icon },
         { name: 'Profile', path: '/supervisor/profile', icon: assets.order_icon },
     ];
 

@@ -5,8 +5,8 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
 
-const RegisterFormPage = () => {
-  const [role, setRole] = useState("Reporter");
+const RegisterCleaner = () => {
+  const [role, setRole] = useState("Cleaner");
   const [firstName, setFirstName] = useState("");
   const [surname, setSurname] = useState("");
   const [email, setEmail] = useState("");
@@ -67,7 +67,7 @@ const RegisterFormPage = () => {
       }
 
       toast.success("Registration successful!");
-      router.replace("/login")
+      router.replace("/supervisor")
 
 
     } catch (error) {
@@ -98,7 +98,8 @@ const RegisterFormPage = () => {
               className="border rounded px-3 py-2"
             >
               <option value="Supervisor">Supervisor</option>
-              <option value="Reporter">Reporter</option>
+              <option value="Cleaner">Cleaner</option>
+             
             </select>
           </div>
 
@@ -256,4 +257,4 @@ const RegisterFormPage = () => {
   );
 };
 
-export default RegisterFormPage;
+export default RegisterCleaner;
